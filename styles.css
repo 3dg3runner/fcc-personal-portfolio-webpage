@@ -1,0 +1,214 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 90%;
+}
+
+.nav-container {
+  top: 0;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #be3144;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+#navbar > ul {
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+li {
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 140%;
+}
+
+li:hover {
+  color: black;
+  background-color: white;
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  margin-top: 50px;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 45vw;
+  padding: 2rem 0;
+  background: linear-gradient(90deg, #888888, #111111);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#welcome-section > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 400%;
+  font-weight: 100;
+  font-family: Consolas, sans-serif;
+  color: white;
+}
+
+#welcome-section > p {
+  width: 100%;
+  text-align: center;
+  font-size: 170%;
+  font-style: italic;
+  font-family: sans-serif;
+  color: #be3144;
+  padding-top: 1rem;
+}
+
+#projects {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #45567d;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#projects > h1 {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 300%;
+  padding: 2rem;
+  border-bottom: solid white 0.5rem;
+}
+
+.project-tile {
+  background: linear-gradient(black 60%, grey 95%);
+  color: white;
+  width: 35%;
+  margin: 1rem;
+}
+
+.project-link {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.project-link:hover {
+  color: yellow;
+  transition: 1s;
+}
+
+.project-img {
+  width: 80%;
+  margin: 0.5rem;
+}
+
+.project-title {
+  width: 100%;
+  font-size: 150%;
+  font-family: Consolas, sans-serif;
+  background-color: grey;
+  text-align: center;
+  border-top: solid #45567d 0.5rem;
+}
+
+#contact {
+  width: 100%;
+  height: 400px;
+  padding: 2rem 0;
+  background: linear-gradient(-90deg, #444444, #111111);
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > h1 {
+  font-size: 300%;
+  padding: 1rem;
+}
+
+#contact > p {
+  font-size: 150%;
+  padding: 0.5rem 0 1rem 0;
+  font-style: italic;
+}
+
+.links-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.links-container > p {
+  font-size: 150%;
+  padding: 2rem;
+}
+
+#profile-link:hover {
+  color: yellow;
+  transition: 1s;
+}
+
+footer {
+  color: white;
+  border-top: solid #be3144 0.5rem;
+  background: linear-gradient(-90deg, #444444, #111111);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > p {
+  font-size: 120%;
+  padding: 2rem;
+}
+
+#copyright > a {
+  text-decoration: underline;
+}
+
+#copyright > a:hover {
+  color: yellow;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 650px) {
+  #navbar > ul {
+    justify-content: center;
+  }
+
+  .project-title {
+    font-size: 120%;
+  }
+
+  .links-container {
+    flex-flow: column wrap;
+  }
+
+  .links-container > p {
+    padding: 1rem;
+  }
+}
